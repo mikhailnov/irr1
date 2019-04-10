@@ -9,7 +9,7 @@
 from sympy import *
 
 # Вариант 10
-for x3v in range(0,5):
+def count_var10():
 	
 	x, x1, x2, x3, x4, x5 = symbols('x, x1, x2, x3, x4, x5')
 
@@ -47,4 +47,5 @@ for x3v in range(0,5):
 	
 	print('')
 
-
+for x3v in range(0,5):
+	count_var10()
