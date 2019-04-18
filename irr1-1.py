@@ -9,7 +9,9 @@
 from sympy import *
 
 # s - чувствительность
-s = [0 for s in range(0,6)]
+s = [0 for s in range(1,8)]
+# psi - коэффициент влияния относительной погрешности
+psi = [0 for psi in range(1,9)]
 # t - type, тип соединения
 # pos - последовательное, par - параллельное
 # Схема в файле "Схема 1.png"
@@ -22,6 +24,29 @@ f[1] = 'x'
 f[2] = '0.5*x'
 f[4] = '0.5*x'
 f[5] = '0.5*x'
+par_el1 = [0 for par_el1 in range(0,9)]
+par_el2 = [0 for par_el2 in range(0,9)]
+par_el3 = [0 for par_el3 in range(0,9)]
+par_el4 = [0 for par_el4 in range(0,9)]
+par_el1[6] = 1
+par_el2[6] = 2
+par_el1[7] = 4
+par_el2[7] = 5
+
+def count_psi(num):
+	if (t[num] == 'pos'):
+		psi[num] = 1
+	elif (t[num] == 'par'):
+		# debug
+		print('# num = ', num)
+		print('# par_el1[num] = ', par_el1[num])
+		print('# par_el1[num+1] = ', par_el1[num+1])
+		print('# s[par_el1[num]] = ', s[par_el1[num]])
+		print('# s[par_el1[num+1]] = ', s[par_el1[num+1]])
+		# /debug
+		print('# Формула расчета: psi[num] = s[par_el1[num]]/(s[par_el1[num]]+s[par_el1[num+1]])')
+		psi[num] = s[par_el1[num]]/(s[par_el1[num]]+s[par_el1[num+1]])
+	print('Коэффициент влияния относительной погрешности', num, ': ', psi[num])
 
 # Вариант 10
 def count_var10():
@@ -64,5 +89,7 @@ def count_var10():
 
 for x3v in range(0,5):
 	count_var10()
+for i in range(0,8):
+	count_psi(i)
 
 #def count_s():
