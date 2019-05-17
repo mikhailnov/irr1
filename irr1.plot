@@ -6,8 +6,7 @@ set terminal svg
 set grid
 
 #x=4
-
-set xrange[1:5]
+# x - это x1, чтобы совпадало с осью OX
 
 y1(x)=x
 y2(x)=0.5*x
@@ -16,4 +15,7 @@ y3(x)=0.5*y1y2(x)
 y4(x)=0.5*y3(x)
 y5(x)=0.5*y4(x)
 
-plot for [x=1:5] y5(x)
+set xrange[1:5]
+#set yrange[1:5]
+#plot y5(x), y4(x)
+plot y1(x), y2(x), y1y2(x)
