@@ -18,4 +18,5 @@ y5(x)=0.5*y4(x)
 set xrange[1:5]
 #set yrange[1:5]
 #plot y5(x), y4(x)
+set output 'test.svg'
 plot y1(x), y2(x), y1y2(x)
