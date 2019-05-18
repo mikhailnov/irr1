@@ -18,5 +18,16 @@ y5(x)=0.5*y4(x)
 set xrange[1:5]
 #set yrange[1:5]
 #plot y5(x), y4(x)
-set output 'test.svg'
+
+set xlabel "x1"
+
+set output 'y1_y2_y1y2__x1.svg'
 plot y1(x), y2(x), y1y2(x)
+
+set output 'y3__x1.svg'
+plot y3(x)
+
+set output 'all__x1.svg'
+plot y1(x), y2(x), y1y2(x), y3(x), y4(x), y5(x)
+
+# найти y, s как tg всего (??)
