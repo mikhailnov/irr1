@@ -24,8 +24,14 @@ set xlabel "x1"
 set output 'y1_y2_y1y2__x1.svg'
 plot y1(x), y2(x), y1y2(x)
 
+set output 'y1_y2__x1.svg'
+plot y1y2(x)
 set output 'y3__x1.svg'
 plot y3(x)
+set output 'y4__x1.svg'
+plot y4(x)
+set output 'y5__x1.svg'
+plot y5(x)
 
 set output 'all__x1.svg'
 plot y1(x), y2(x), y1y2(x), y3(x), y4(x), y5(x)
