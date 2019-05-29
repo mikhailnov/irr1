@@ -4,6 +4,7 @@
 # Output W3C Scalable Vector Graphics
 set terminal svg
 set grid
+set mytics 10
 
 #x=4
 # x - это x1, чтобы совпадало с осью OX
