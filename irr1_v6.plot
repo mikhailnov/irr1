@@ -18,18 +18,17 @@ set xlabel "x1"
 set output 'v6__y1_y2_y3_y1y2y3__x1.svg'
 plot y1(x), y2(x), y3(x), y1y2y3(x)
 
-set xlabel "y1y2y3(x1)"
-set output 'v6__y3__x1.svg'
-plot y3(x)
-
-set xlabel "y4(y3)"
+set xlabel "y4(y1y2y3(x1))"
 set output 'v6__y4__x1.svg'
+set xrange[2.3:8.7]
 plot y4(x)
 
 set xlabel "y5(y4)"
 set output 'v6__y5__x1.svg'
+set xrange[4.5:14.21]
 plot y5(x)
 
 set xlabel "Встречно-параллельное соединение"
 set output 'v6__y4_y5__x1.svg'
+set xrange[2.3:14.21]
 plot y4(x), y5(x), y4(x)+y5(x)
