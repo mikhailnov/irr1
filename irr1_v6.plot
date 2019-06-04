@@ -5,7 +5,7 @@ set terminal svg
 set grid
 set mytics 10
 set mxtics 10
-set xrange[1:5]
+set xrange[0:]
 
 y1(x)=x
 y2(x)=sqrt(x)
@@ -20,15 +20,15 @@ plot y1(x), y2(x), y3(x), y1y2y3(x)
 
 set xlabel "y4(y1y2y3(x1))"
 set output 'v6__y4__x1.svg'
-set xrange[2.3:8.7]
+set xrange[0:]
 plot y4(x)
 
 set xlabel "y5(y4)"
 set output 'v6__y5__x1.svg'
-set xrange[4.5:14.21]
+set xrange[0:]
 plot y5(x)
 
 set xlabel "Встречно-параллельное соединение"
 set output 'v6__y4_y5__x1.svg'
-set xrange[2.3:14.21]
+set xrange[0:]
 plot y4(x), y5(x), y4(x)+y5(x)
