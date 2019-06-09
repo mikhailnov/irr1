@@ -4,6 +4,7 @@
 set terminal svg
 set grid
 set mytics 10
+set mxtics 10
 set xrange[0:]
 
 y1(x)=x
