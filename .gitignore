@@ -3,3 +3,4 @@ test.*
 *.png
 .~lock*
 irr1_v10_gen_table
+*.csv
