@@ -20,7 +20,7 @@ int main() {
 		cout << y2 << " ";
 		y1y2 = y1+y2;
 		cout << y1y2 << " ";
-		if (x <= 1) {
+		if (x <= 2) {
 			y3 = 0.5*x;
 		} else {
 			y3 = x-1;
