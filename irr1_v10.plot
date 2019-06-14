@@ -30,6 +30,5 @@ plot "irr1_v10_y3_table.csv" using 1:7 title 'y5(x1)' with lines
 
 set xlabel "Встречно-параллельное соединение 1//2+3+4=5 и x -> x1"
 set output 'y4_y5__x1.svg'
-plot "irr1_v10_y3_table.csv" using 1:8 title 'y4(x1)+y5(x1)' with lines, \
-     "irr1_v10_y3_table.csv" using 1:6 title 'y4(x1)' with lines, \
-     "irr1_v10_y3_table.csv" using 1:7 title 'y5(x1)' with lines
+plot "irr1_v10_y3_table.csv" using 1:6 title 'y4(x1)' with lines, \
+     "irr1_v10_y3_table.csv" using 7:5 title 'y4(y3)' with lines
