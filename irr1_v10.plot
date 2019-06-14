@@ -4,7 +4,7 @@ set terminal svg
 set grid
 set mytics 10
 set mxtics 10
-#set xrange[0:]
+set xrange[0:4]
 #set logscale x
 set datafile separator " "
 
@@ -20,7 +20,7 @@ set xlabel "y3(y1y2(x1))"
 set output 'y3__x1.svg'
 plot "irr1_v10_y3_table.csv" using 1:5 title 'y3(x1)' with lines
 
-set xlabel "y4(y3)"
+set xlabel "y4(x1)"
 set output 'y4__x1.svg'
 plot "irr1_v10_y3_table.csv" using 1:6 title 'y4(x1)' with lines
 
