@@ -11,7 +11,8 @@ int main() {
 	float y4 = 0.00;
 	float y5 = 0.00;
 	float y4y5 = 0.00;
-	//cout << "x y1 y2 y1y2 y3 y4 y5 y4y5\n";
+	float obr = 0.00;
+	//cout << "x y1 y2 y1y2 y3 y4 y5 y4y5 obr\n";
 	for (x = 0.00; x <= 4.00; x += 0.01) {
 		cout << x << " ";
 		y1 = x;
@@ -32,6 +33,8 @@ int main() {
 		cout << y5 << " ";
 		y4y5 = y4+y5;
 		cout << y4y5 << " ";
+		obr = y5 + x;
+		cout << obr << " ";
 		cout << "\n";
 	}
 }
