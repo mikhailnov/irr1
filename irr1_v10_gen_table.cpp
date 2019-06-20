@@ -36,6 +36,6 @@ int main() {
 		obr = y5 + x;
 		cout << obr << " ";
 		cout << "\n";
-		x2 = y5;
+	}
 }
 
