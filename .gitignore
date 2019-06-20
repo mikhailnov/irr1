@@ -4,3 +4,4 @@ test.*
 .~lock*
 irr1_v10_gen_table
 *.csv
+irr1_v6_gen_table
