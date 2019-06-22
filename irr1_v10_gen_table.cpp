@@ -21,7 +21,7 @@ int main() {
 		cout << y2 << " ";
 		y1y2 = y1+y2;
 		cout << y1y2 << " ";
-		if (x <= 2) {
+		if (x <= 2.01) {
 			y3 = 0.5*x;
 		} else {
 			y3 = x-1;

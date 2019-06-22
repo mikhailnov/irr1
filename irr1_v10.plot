@@ -18,7 +18,7 @@ plot "irr1_v10_y3_table.csv" using 1:2 title 'y1(x1)' with lines, \
 
 set xlabel "y3(y1y2)"
 set output 'y3.svg'
-plot "irr1_v10_y3_table.csv" using 4:5 title 'y3(y1y2)' with lines
+plot "irr1_v10_y3_table.csv" using 1:5 title 'y3(y1y2)' with lines
 
 set xlabel "y4(y3)"
 set output 'y4.svg'
